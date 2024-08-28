@@ -1,3 +1,11 @@
+import { ThemeProvider } from 'styled-components'
+import { HomePage } from './pages/homePage'
+import { lightTheme } from './styles/themes/lightTheme'
+
 export function App() {
-  return <h1> Hello World</h1>
+  return (
+    <ThemeProvider theme={lightTheme}>
+      <HomePage />
+    </ThemeProvider>
+  )
 }
