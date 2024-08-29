@@ -1,3 +1,11 @@
+import { FooterComponent } from '../../components/footer'
+import { HeaderComponent } from '../../components/header'
+import * as S from './styles'
 export function HomePage() {
-  return <p>Home page</p>
+  return (
+    <S.HomePageContainer>
+      <HeaderComponent />
+      <FooterComponent />
+    </S.HomePageContainer>
+  )
 }
