@@ -1,11 +1,11 @@
 import { ThemeProvider } from 'styled-components'
 import { HomePage } from './pages/homePage'
 import { GlobalStyles } from './styles/global'
-import { lightTheme } from './styles/themes/lightTheme'
+import { darkTheme } from './styles/themes/darkTheme'
 
 export function App() {
   return (
-    <ThemeProvider theme={lightTheme}>
+    <ThemeProvider theme={darkTheme}>
       <GlobalStyles />
       <HomePage />
     </ThemeProvider>
