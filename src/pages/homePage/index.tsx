@@ -1,6 +1,7 @@
 import { ReactTyped } from 'react-typed'
 import { FooterComponent } from '../../components/footer'
 import { HeaderComponent } from '../../components/header'
+import { ProjectsSection } from '../../components/projects'
 import * as S from './styles'
 export function HomePage() {
   return (
@@ -18,7 +19,9 @@ export function HomePage() {
         </h1>
         <h3>Ao meu portfólio</h3>
       </S.HomePageMainSection>
-      <section>section</section>
+      <S.SectionCard>
+        <ProjectsSection />
+      </S.SectionCard>
       <FooterComponent />
     </S.HomePageContainer>
   )

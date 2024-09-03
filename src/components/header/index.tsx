@@ -7,13 +7,19 @@ export function HeaderComponent() {
       <Code size={30} weight="bold" />
       <S.SocialMediaContainer>
         <Tooltip title="Instagram">
-          <InstagramLogo size={30} weight="bold" />
+          <a href="https://www.instagram.com/joao_vitorpaludo?igsh=eGc2dGxxNjkxNDQy">
+            <InstagramLogo size={30} weight="bold" />
+          </a>
         </Tooltip>
         <Tooltip title="Linkedin">
-          <LinkedinLogo size={30} weight="bold" />
+          <a href="https://www.linkedin.com/in/jo%C3%A3ovitorpaludo/">
+            <LinkedinLogo size={30} weight="bold" />
+          </a>
         </Tooltip>
         <Tooltip title="X">
-          <XLogo size={30} weight="bold" />
+          <a href="https://x.com/Zyres1?s=09">
+            <XLogo size={30} weight="bold" />
+          </a>
         </Tooltip>
       </S.SocialMediaContainer>
     </S.HeaderComponentContainer>
