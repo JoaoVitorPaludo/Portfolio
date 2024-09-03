@@ -37,7 +37,8 @@ export const HomePageMainSection = styled.section`
 `
 
 export const SectionCard = styled.section`
-  min-height: 100vh;
-  padding: 1rem;
+  // min-height: 100vh;
+  padding: 2rem;
+  padding-bottom: 4rem;
   display: flex;
 `

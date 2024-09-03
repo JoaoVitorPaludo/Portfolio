@@ -1,5 +1,6 @@
 import { Fade, useScrollTrigger } from '@mui/material'
 import { ReactTyped } from 'react-typed'
+import { CompaniesSection } from '../../components/companies'
 import { FooterComponent } from '../../components/footer'
 import { HeaderComponent } from '../../components/header'
 import { ProjectsSection } from '../../components/projects'
@@ -27,6 +28,9 @@ export function HomePage() {
       </S.HomePageMainSection>
       <S.SectionCard>
         <ProjectsSection />
+      </S.SectionCard>
+      <S.SectionCard>
+        <CompaniesSection />
       </S.SectionCard>
 
       <FooterComponent />

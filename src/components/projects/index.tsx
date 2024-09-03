@@ -3,7 +3,7 @@ import * as S from './styles'
 export function ProjectsSection() {
   const array = [1, 2, 3, 4, 5]
   const trigger = useScrollTrigger({
-    disableHysteresis: true,
+    // disableHysteresis: true,
   })
   console.log('trigger', trigger)
   return (
