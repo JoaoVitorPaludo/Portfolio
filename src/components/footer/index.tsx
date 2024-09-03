@@ -4,7 +4,7 @@ export function FooterComponent() {
   return (
     <S.FooterComponentContainer>
       <Snowflake size={32} color="#0497d9" weight="duotone" />
-      João Vitor Primieri Paludo
+      <h3>João Vitor Primieri Paludo</h3>
     </S.FooterComponentContainer>
   )
 }

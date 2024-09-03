@@ -6,19 +6,33 @@ export const HomePageContainer = styled.div`
   min-height: 100vh;
 `
 export const HomePageMainSection = styled.section`
-  min-height: 96vh;
+  min-height: 89.5vh;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   justify-content: center;
   align-items: center;
-
+  .typed-cursor {
+    color: ${(props) => props.theme['second-text-color']};
+  }
   h1,
   span {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      'Open Sans',
+      'Helvetica Neue',
+      sans-serif;
   }
 `
 

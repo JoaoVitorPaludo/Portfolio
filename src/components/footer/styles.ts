@@ -9,4 +9,20 @@ export const FooterComponentContainer = styled.footer`
   align-items: center;
   gap: 0.5rem;
   font-size: 1.2rem;
+
+  h3 {
+    font-size: 1.3rem;
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      'Open Sans',
+      'Helvetica Neue',
+      sans-serif;
+  }
 `
