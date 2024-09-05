@@ -17,13 +17,14 @@ export const CompaniesWrapperContainer = styled.div`
   gap: 1rem;
   justify-content: center;
   overflow: hidden; /* Adiciona esta linha */
+  padding-bottom: 1rem;
 `
 export const CompaniesCard = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
   width: 35rem;
-  height: 17rem;
+  height: 16rem;
   padding: 1.5rem;
   background-color: ${(props) => props.theme['card-background']};
   border-radius: 1rem;
@@ -74,6 +75,18 @@ export const CompaniesCard = styled.div`
 
     p {
       line-height: 1.6;
+      font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
     }
   }
 `

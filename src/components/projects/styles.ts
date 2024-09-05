@@ -30,6 +30,21 @@ export const ProjectCard = styled.div`
   border-radius: 1rem;
   box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.5);
 
+  p {
+    line-height: 1.6;
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      'Open Sans',
+      'Helvetica Neue',
+      sans-serif;
+  }
   &:hover {
     transform: scale(1.03);
     transition: transform 0.3s ease-in-out;

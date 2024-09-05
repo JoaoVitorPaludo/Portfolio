@@ -8,7 +8,7 @@ export function CompaniesSection() {
     // disableHysteresis: true,
     threshold: 1000,
   })
-  console.log('trig', trigger)
+
   return (
     <S.CompaniesSectionContainer>
       <h3>EXPERIÊNCIAS PROFISSIONAIS</h3>
