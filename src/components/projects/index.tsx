@@ -21,6 +21,15 @@ export function ProjectsSection() {
                   <h3>{project.name}</h3>
                 </S.ProjectCardHeader>
                 <p>{project.description}</p>
+                {project.homepage !== null && project.homepage !== '' && (
+                  <a
+                    href={project.homepage}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Acessar Site
+                  </a>
+                )}
               </S.ProjectCard>
             )
           })}

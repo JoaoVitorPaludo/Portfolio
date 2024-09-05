@@ -5,6 +5,7 @@ interface GithubProjectsProps {
   url: string
   name: string
   description: string
+  homepage: string
 }
 
 export const useProjects = () => {

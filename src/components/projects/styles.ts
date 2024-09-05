@@ -45,6 +45,31 @@ export const ProjectCard = styled.div`
       'Helvetica Neue',
       sans-serif;
   }
+
+  a {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-decoration: none;
+    color: ${(props) => props.theme['second-text-color']};
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      'Open Sans',
+      'Helvetica Neue',
+      sans-serif;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
   &:hover {
     transform: scale(1.03);
     transition: transform 0.3s ease-in-out;
