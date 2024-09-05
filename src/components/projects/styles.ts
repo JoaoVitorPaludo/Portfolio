@@ -21,6 +21,8 @@ export const ProjectsWrapperContainer = styled.div`
 
 export const ProjectCard = styled.div`
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
   width: 20rem;
   height: 15rem;
   padding: 1rem;
@@ -32,5 +34,17 @@ export const ProjectCard = styled.div`
     transform: scale(1.03);
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
+  }
+`
+export const ProjectCardHeader = styled.header`
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  height: fit-content;
+  svg {
+    color: ${(props) => props.theme['second-text-color']};
+  }
+  h3 {
+    font-size: 1.3rem;
   }
 `
