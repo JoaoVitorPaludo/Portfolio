@@ -1,14 +1,14 @@
-import { Fade, useScrollTrigger } from '@mui/material'
+import { Fade } from '@mui/material'
 import { ReactTyped } from 'react-typed'
 import { CompaniesSection } from '../../components/companies'
 import { FooterComponent } from '../../components/footer'
 import { HeaderComponent } from '../../components/header'
 import { ProjectsSection } from '../../components/projects'
+import { useVisibilityObserver } from '../../utils/intersectionObserver'
 import * as S from './styles'
 export function HomePage() {
-  const trigger = useScrollTrigger({
-    disableHysteresis: true,
-  })
+  const { isVisible, elementRef } = useVisibilityObserver(1)
+
   return (
     <S.HomePageContainer>
       <HeaderComponent />
@@ -22,8 +22,8 @@ export function HomePage() {
             loop={true}
           />
         </h1>
-        <Fade in={!trigger} timeout={1000}>
-          <h3>Ao meu portfólio</h3>
+        <Fade in={isVisible} timeout={1000}>
+          <h3 ref={elementRef}>Ao meu portfólio</h3>
         </Fade>
       </S.HomePageMainSection>
       <S.SectionCard>

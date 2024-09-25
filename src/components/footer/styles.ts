@@ -11,7 +11,7 @@ export const FooterComponentContainer = styled.footer`
   font-size: 1.2rem;
 
   h3 {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     font-family:
       system-ui,
       -apple-system,

@@ -21,18 +21,6 @@ export const HomePageMainSection = styled.section`
   }
   h3 {
     font-size: 1.5rem;
-    font-family:
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      'Segoe UI',
-      Roboto,
-      Oxygen,
-      Ubuntu,
-      Cantarell,
-      'Open Sans',
-      'Helvetica Neue',
-      sans-serif;
   }
 `
 

@@ -4,6 +4,7 @@ export const ProjectsSectionContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
+  width: 80%;
   align-items: center;
   gap: 2rem;
   h3 {
@@ -13,7 +14,8 @@ export const ProjectsSectionContainer = styled.div`
 `
 export const ProjectsWrapperContainer = styled.div`
   flex-wrap: wrap;
-  width: 100%;
+
+  width: 80%;
   display: flex;
   gap: 1rem;
   justify-content: center;

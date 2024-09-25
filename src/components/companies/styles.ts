@@ -42,6 +42,7 @@ export const CompaniesCard = styled.div`
     gap: 1rem;
     width: 100%;
     img {
+      //border: 3px solid ${(props) => props.theme['second-text-color']};
       width: 5rem;
       height: 5rem;
       border-radius: 10%;

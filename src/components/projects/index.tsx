@@ -1,18 +1,17 @@
-import { Grow, useScrollTrigger } from '@mui/material'
+import { Grow } from '@mui/material'
 import { GithubLogo } from '@phosphor-icons/react'
+import { useVisibilityObserver } from '../../utils/intersectionObserver'
 import * as S from './styles'
 import { useProjects } from './useProjects'
 export function ProjectsSection() {
   const { githubProjects } = useProjects()
-  const trigger = useScrollTrigger({
-    // disableHysteresis: true,
-  })
+  const { isVisible, elementRef } = useVisibilityObserver(0.1)
 
   return (
     <S.ProjectsSectionContainer>
       <h3>REPOSITÓRIOS PÚBLICOS</h3>
-      <Grow in={trigger} timeout={2000}>
-        <S.ProjectsWrapperContainer>
+      <Grow in={isVisible} timeout={2000}>
+        <S.ProjectsWrapperContainer ref={elementRef}>
           {githubProjects.map((project, index: number) => {
             return (
               <S.ProjectCard key={index}>
