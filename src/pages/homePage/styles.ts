@@ -21,6 +21,13 @@ export const HomePageMainSection = styled.section`
   }
   h3 {
     font-size: 1.5rem;
+    //text-decoration: underline;
+
+    &:hover {
+      color: ${(props) => props.theme['second-text-color']};
+      cursor: pointer;
+      transition: transform 0.5s ease-in-out;
+    }
   }
 `
 
