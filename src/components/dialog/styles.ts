@@ -65,6 +65,8 @@ export const AboutMeDialogSection = styled.section`
 
   p {
     flex: 1;
+    font-size: 1rem;
+    font-weight: 500;
     width: 100%;
     font-family:
       system-ui,

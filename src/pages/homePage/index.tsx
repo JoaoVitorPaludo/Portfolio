@@ -25,7 +25,11 @@ export function HomePage() {
           />
         </h1>
         <Fade in={isVisible} timeout={1000}>
-          <h3 ref={elementRef} onClick={() => setShowModal(true)}>
+          <h3
+            ref={elementRef}
+            onClick={() => setShowModal(true)}
+            data-testid="home-page-modal"
+          >
             Sobre mim
           </h3>
         </Fade>

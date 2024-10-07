@@ -9,7 +9,12 @@ export function AboutMeDialog({ handleCloseModal }: AboutMeDialogProps) {
     <S.AboutMeDialogContainer>
       <S.AboutMeDialogHeader>
         {/* <h2>Sobre Mim</h2> */}
-        <X size={30} weight="bold" onClick={() => handleCloseModal()} />
+        <X
+          size={30}
+          weight="bold"
+          onClick={() => handleCloseModal()}
+          data-testid="close-modal-button"
+        />
       </S.AboutMeDialogHeader>
       <S.AboutMeDialogMain>
         <S.AboutMeDialogSection>
@@ -18,7 +23,8 @@ export function AboutMeDialog({ handleCloseModal }: AboutMeDialogProps) {
             Me chamo João Vitor, tenho 22 anos e sou formado em Analise e
             Desenvolvimento de Sistemas pela UPF (Universidade de Passo Fundo).
             <br />
-            Atualmente resido na cidade de Paraí/RS
+            Atualmente resido na cidade de Paraí/RS, trabalho com
+            desenvolvimento de software desde 08/2022
           </p>
         </S.AboutMeDialogSection>
         <S.AboutMeDialogSection>b</S.AboutMeDialogSection>

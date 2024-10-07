@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { getGithubRepository } from '../../controller/projectsController'
 
-interface GithubProjectsProps {
+export interface GithubProjectsProps {
   url: string
   name: string
   description: string
@@ -26,5 +26,6 @@ export const useProjects = () => {
   }, [])
   return {
     githubProjects,
+    handleGetRepository,
   }
 }

@@ -13,7 +13,7 @@ export function CompaniesSection() {
     <S.CompaniesSectionContainer>
       <h3>EXPERIÊNCIAS PROFISSIONAIS</h3>
       <S.CompaniesWrapperContainer>
-        <S.CompaniesSlideTransition isActive={trigger} side="left">
+        <S.CompaniesSlideTransition $isActive={trigger} side="left">
           <S.CompaniesCard>
             <header>
               <img src={lechlerLogo} alt="" />
@@ -34,7 +34,7 @@ export function CompaniesSection() {
           </S.CompaniesCard>
         </S.CompaniesSlideTransition>
 
-        <S.CompaniesSlideTransition isActive={trigger} side="right">
+        <S.CompaniesSlideTransition $isActive={trigger} side="right">
           <S.CompaniesCard>
             {' '}
             <header>

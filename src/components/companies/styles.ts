@@ -93,17 +93,17 @@ export const CompaniesCard = styled.div`
 `
 
 interface CompaniesSlideTransitionProps {
-  isActive: boolean
+  $isActive: boolean
   side: 'left' | 'right'
 }
 export const CompaniesSlideTransition = styled.div<CompaniesSlideTransitionProps>`
   transform: ${(props) =>
-    props.isActive
+    props.$isActive
       ? 'none'
       : `${props.side === 'left' ? 'translateX(-1000.5px)' : 'translateX(1000.5px)'} `};
 
   transition: ${(props) =>
-    props.isActive
+    props.$isActive
       ? 'transform 1.5s cubic-bezier(0, 0, 0.2, 1)'
       : 'transform 1.5s cubic-bezier(0, 0, 0, 0)'};
 `
