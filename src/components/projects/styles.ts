@@ -7,7 +7,9 @@ export const ProjectsSectionContainer = styled.div`
   align-items: center;
   gap: 2rem;
   margin: 0 8rem;
-
+  @media (max-width: 1460px) {
+    margin: 0;
+  }
   h3 {
     font-size: 1.5rem;
     font-family: 'Courier New', Courier, monospace;
@@ -25,13 +27,18 @@ export const ProjectCard = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  /* width: 20rem; */
   width: 32%;
   height: 15rem;
   padding: 1rem;
   background-color: ${(props) => props.theme['card-background']};
   border-radius: 1rem;
   box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.5);
+  @media (max-width: 900px) {
+    width: 49%;
+  }
+  @media (max-width: 862px) {
+    width: 100%;
+  }
 
   p {
     line-height: 1.6;

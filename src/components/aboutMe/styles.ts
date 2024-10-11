@@ -7,6 +7,9 @@ export const AboutMeContainer = styled.div`
   align-items: center;
   gap: 2rem;
   margin: 0 8rem;
+  @media (max-width: 1460px) {
+    margin: 0;
+  }
   h3 {
     font-size: 1.5rem;
     font-family: 'Courier New', Courier, monospace;
@@ -18,10 +21,17 @@ export const AboutMeMainCard = styled.main`
   gap: 1rem;
   justify-content: center;
   align-items: center;
+  @media (max-width: 862px) {
+    flex-direction: column;
+    img {
+      border-radius: 9999px !important;
+      width: 14rem !important;
+      height: 14rem;
+      object-fit: cover;
+    }
+  }
   img {
     width: 22rem;
-
-    //object-fit: cover;
     border-radius: 10px;
   }
 

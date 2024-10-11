@@ -7,6 +7,9 @@ export const CompaniesSectionContainer = styled.div`
   align-items: center;
   gap: 2rem;
   margin: 0 8rem;
+  @media (max-width: 1460px) {
+    margin: 0;
+  }
   h3 {
     font-size: 1.5rem;
     font-family: 'Courier New', Courier, monospace;
@@ -18,6 +21,9 @@ export const CompaniesWrapperContainer = styled.div`
   gap: 1rem;
   justify-content: space-between;
   overflow: hidden; /* Adiciona esta linha */
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
 `
 export const CompaniesCard = styled.div`
   display: flex;
@@ -29,11 +35,6 @@ export const CompaniesCard = styled.div`
   background-color: ${(props) => props.theme['card-background']};
   border-radius: 1rem;
   box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.5);
-  /* &:hover {
-    transform: scale(1.02);
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-  } */
 
   header {
     display: flex;
@@ -42,7 +43,6 @@ export const CompaniesCard = styled.div`
     gap: 1rem;
     width: 100%;
     img {
-      //border: 3px solid ${(props) => props.theme['second-text-color']};
       width: 5rem;
       height: 5rem;
       border-radius: 10%;
@@ -88,6 +88,15 @@ export const CompaniesCard = styled.div`
         'Open Sans',
         'Helvetica Neue',
         sans-serif;
+      @media (max-width: 1460px) {
+        font-size: 0.875rem;
+      }
+      @media (max-width: 900px) {
+        font-size: 1.1rem;
+      }
+      @media (max-width: 670px) {
+        font-size: 0.875rem;
+      }
     }
   }
 `
@@ -108,4 +117,8 @@ export const CompaniesSlideTransition = styled.div<CompaniesSlideTransitionProps
     props.$isActive
       ? 'transform 1.5s cubic-bezier(0, 0, 0.2, 1)'
       : 'transform 1.5s cubic-bezier(0, 0, 0, 0)'};
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 `

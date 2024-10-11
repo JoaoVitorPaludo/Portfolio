@@ -9,7 +9,9 @@ export const FooterComponentContainer = styled.footer`
   align-items: center;
   gap: 0.5rem;
   font-size: 1.2rem;
-
+  @media (max-width: 566px) {
+    margin: 0rem 4rem;
+  }
   h3 {
     font-size: 0.8rem;
     font-family:

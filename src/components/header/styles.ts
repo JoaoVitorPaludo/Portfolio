@@ -8,6 +8,9 @@ export const HeaderComponentContainer = styled.header`
   padding: 1.2rem 2rem;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 566px) {
+    margin: 0rem 4rem;
+  }
   svg {
     color: ${(props) => props.theme['base-icon-color']};
     cursor: pointer;
