@@ -35,6 +35,7 @@ export function HomePage() {
         </Fade>
         <Dialog
           open={showModal}
+          data-testid="home-page-dialog"
           onClose={() => setShowModal(false)}
           fullWidth={true}
           maxWidth="md"

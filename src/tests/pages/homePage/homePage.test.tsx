@@ -1,5 +1,6 @@
 import '@testing-library/jest-dom'
 import { fireEvent, render, screen, waitFor } from '@testing-library/react'
+import { act } from 'react'
 import { HomePage } from '../../../pages/homePage'
 beforeAll(() => {
   class IntersectionObserverMock {
@@ -25,11 +26,23 @@ describe('HomePage component', () => {
     })
 
     // Agora simula o fechamento do modal clicando fora dele ou no botão de fechar
-    fireEvent.click(screen.getByTestId('close-modal-button')) // Supondo que este seja o botão de fechar
-
+    act(() => {
+      fireEvent.click(screen.getByTestId('close-modal-button'))
+    })
     // Verifica se o modal foi fechado
     await waitFor(() => {
       expect(screen.queryByTestId('close-modal-button')).not.toBeInTheDocument()
+    })
+  })
+  it('Should close the modal by pressing escape', async () => {
+    render(<HomePage />)
+
+    fireEvent.click(screen.getByTestId('home-page-modal'))
+
+    act(() => {
+      fireEvent.keyDown(screen.getByTestId('home-page-dialog'), {
+        key: 'Escape',
+      })
     })
   })
 })
