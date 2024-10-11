@@ -17,8 +17,11 @@ export function AboutMeDialog({ handleCloseModal }: AboutMeDialogProps) {
         />
       </S.AboutMeDialogHeader>
       <S.AboutMeDialogMain>
-        <S.AboutMeDialogSection>
+        <S.AboutMeImageSection>
           <img src={image} alt="Google" />
+        </S.AboutMeImageSection>
+        <S.AboutMeDialogSection>
+          {' '}
           <p>
             Me chamo João Vitor, tenho 22 anos e sou formado em Analise e
             Desenvolvimento de Sistemas pela UPF (Universidade de Passo Fundo).
@@ -27,7 +30,6 @@ export function AboutMeDialog({ handleCloseModal }: AboutMeDialogProps) {
             desenvolvimento de software desde 08/2022
           </p>
         </S.AboutMeDialogSection>
-        <S.AboutMeDialogSection>b</S.AboutMeDialogSection>
       </S.AboutMeDialogMain>
     </S.AboutMeDialogContainer>
   )

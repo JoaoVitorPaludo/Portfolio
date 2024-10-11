@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const AboutMeDialogContainer = styled.div`
   background-color: ${(props) => props.theme['background-500']};
   width: 100%;
+  max-height: 580px;
   padding: 2rem;
   border-radius: 1rem;
   height: 85vh;
@@ -49,19 +50,24 @@ export const AboutMeDialogMain = styled.main`
   display: flex;
   gap: 1rem;
 `
-export const AboutMeDialogSection = styled.section`
-  width: 50%;
+export const AboutMeImageSection = styled.section`
+  width: 22rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 1rem;
   img {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    border: 5px ${(props) => props.theme['second-text-color']};
-    border-style: outset;
+    width: 22rem;
+    object-fit: cover;
+    border-radius: 10px;
   }
+`
+export const AboutMeDialogSection = styled.section`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
 
   p {
     flex: 1;
