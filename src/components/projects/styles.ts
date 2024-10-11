@@ -4,9 +4,10 @@ export const ProjectsSectionContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  width: 80%;
   align-items: center;
   gap: 2rem;
+  margin: 0 8rem;
+
   h3 {
     font-size: 1.5rem;
     font-family: 'Courier New', Courier, monospace;
@@ -14,18 +15,18 @@ export const ProjectsSectionContainer = styled.div`
 `
 export const ProjectsWrapperContainer = styled.div`
   flex-wrap: wrap;
-
-  width: 80%;
+  width: 100%;
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  justify-content: space-between;
 `
 
 export const ProjectCard = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 20rem;
+  /* width: 20rem; */
+  width: 32%;
   height: 15rem;
   padding: 1rem;
   background-color: ${(props) => props.theme['card-background']};

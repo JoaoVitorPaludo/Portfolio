@@ -6,6 +6,7 @@ export const CompaniesSectionContainer = styled.div`
   flex: 1;
   align-items: center;
   gap: 2rem;
+  margin: 0 8rem;
   h3 {
     font-size: 1.5rem;
     font-family: 'Courier New', Courier, monospace;
@@ -15,25 +16,24 @@ export const CompaniesWrapperContainer = styled.div`
   width: 100%;
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  justify-content: space-between;
   overflow: hidden; /* Adiciona esta linha */
-  padding-bottom: 1rem;
 `
 export const CompaniesCard = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 35rem;
+  width: 99%;
   height: 16rem;
   padding: 1.5rem;
   background-color: ${(props) => props.theme['card-background']};
   border-radius: 1rem;
   box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.5);
-  &:hover {
+  /* &:hover {
     transform: scale(1.02);
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
-  }
+  } */
 
   header {
     display: flex;
@@ -97,6 +97,8 @@ interface CompaniesSlideTransitionProps {
   side: 'left' | 'right'
 }
 export const CompaniesSlideTransition = styled.div<CompaniesSlideTransitionProps>`
+  width: 50%;
+  padding-bottom: 1rem;
   transform: ${(props) =>
     props.$isActive
       ? 'none'

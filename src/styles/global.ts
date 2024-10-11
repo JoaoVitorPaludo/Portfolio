@@ -19,6 +19,5 @@ export const GlobalStyles = createGlobalStyle`
             background-color: ${(props) => props.theme['background-700']};
             color: ${(props) => props.theme['base-text-color']};
             font: 1rem Merriweather ;
-      
         }
 `
