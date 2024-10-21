@@ -37,7 +37,6 @@ describe('Project component', () => {
       await result.current.handleGetRepository()
     })
     render(<ProjectsSection />)
-    console.log(result.current.githubProjects)
 
     await waitFor(() => {
       expect(result.current.githubProjects).toEqual(mockData)
