@@ -23,20 +23,20 @@ export const AboutMeMainCard = styled.main`
   gap: 2rem;
   justify-content: center;
   align-items: center;
-  @media (max-width: 862px) {
-    flex-direction: column;
-    img {
-      border-radius: 9999px !important;
-      width: 14rem !important;
-      height: 14rem;
-      object-fit: cover;
-    }
-  }
   img {
     width: 22rem;
     height: 22rem;
     border-radius: 10px;
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.5);
+  }
+  @media (max-width: 862px) {
+    flex-direction: column;
+    img {
+      width: 14rem !important;
+      height: 14rem !important;
+      border-radius: 100% !important;
+      object-fit: cover;
+    }
   }
   aside {
     width: 100%;
@@ -53,6 +53,13 @@ export const AboutMeMainCard = styled.main`
       color: white;
       line-height: 1.8;
     }
+
+    @media (max-width: 862px) {
+      gap: 2rem;
+      p {
+        width: 100%;
+      }
+    }
   }
 `
 
@@ -61,12 +68,22 @@ export const AboutMeSkills = styled.div`
   flex-wrap: wrap;
   gap: 1rem;
   width: 90%;
-
+  @media (max-width: 862px) {
+    row-gap: 2rem;
+    justify-content: center;
+    width: 100%;
+  }
   img {
     background-color: transparent;
     width: 3.75rem;
     height: 3.75rem;
     box-shadow: none;
+
+    @media (max-width: 862px) {
+      width: 3.75rem !important;
+      height: 3.75rem !important;
+      border-radius: none !important;
+    }
   }
   div {
     flex: 1;

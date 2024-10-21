@@ -55,39 +55,21 @@ export const CompaniesCard = styled.div`
       gap: 0.5rem;
 
       span {
-        font-family:
-          system-ui,
-          -apple-system,
-          BlinkMacSystemFont,
-          'Segoe UI',
-          Roboto,
-          Oxygen,
-          Ubuntu,
-          Cantarell,
-          'Open Sans',
-          'Helvetica Neue',
-          sans-serif;
+        font-family: system-ui, sans-serif;
+        font-size: 1rem !important;
       }
     }
   }
   main {
     display: flex;
     flex: 1;
+    @media (max-width: 450px) {
+      overflow: auto;
+    }
 
     p {
       line-height: 1.6;
-      font-family:
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        'Segoe UI',
-        Roboto,
-        Oxygen,
-        Ubuntu,
-        Cantarell,
-        'Open Sans',
-        'Helvetica Neue',
-        sans-serif;
+      font-family: system-ui, sans-serif;
       @media (max-width: 1460px) {
         font-size: 0.875rem;
       }

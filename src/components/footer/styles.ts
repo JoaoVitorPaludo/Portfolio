@@ -13,18 +13,7 @@ export const FooterComponentContainer = styled.footer`
     margin: 0rem 4rem;
   }
   h3 {
-    font-size: 0.8rem;
-    font-family:
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      'Segoe UI',
-      Roboto,
-      Oxygen,
-      Ubuntu,
-      Cantarell,
-      'Open Sans',
-      'Helvetica Neue',
-      sans-serif;
+    font-size: 0.8rem !important;
+    font-family: system-ui, sans-serif;
   }
 `
