@@ -10,7 +10,6 @@ describe('getGithubRepository', () => {
     vi.mocked(api.get).mockResolvedValue(mockData)
 
     const response = await getGithubRepository()
-    console.log(response)
     expect(response).toEqual(mockData)
   })
 })
