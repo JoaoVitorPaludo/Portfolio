@@ -16,8 +16,7 @@ export const useProjects = () => {
     try {
       const { data } = await getGithubRepository()
       setGitGubProjects(data)
-    } catch (e) {
-      console.error('Error fetching repositories:', e)
+    } finally {
     }
   }
 

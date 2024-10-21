@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-export function useVisibilityObserver(threshold = 0.1) {
+export function useVisibilityObserver(threshold: number) {
   const [isVisible, setIsVisible] = useState<boolean>(false)
   const elementRef = useRef(null)
 
@@ -17,11 +17,13 @@ export function useVisibilityObserver(threshold = 0.1) {
       observer.observe(elementRef.current)
     }
 
-    return () => {
-      if (elementRef.current) {
-        observer.unobserve(elementRef.current)
-      }
-    }
+    // return () => {
+    //   if (elementRef.current) {
+    //     console.log('element', elementRef.current)
+
+    //     observer.unobserve(elementRef.current)
+    //   }
+    // }
   }, [threshold])
 
   return {

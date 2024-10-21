@@ -1,8 +1,9 @@
 import '@testing-library/jest-dom'
-import { renderHook, waitFor } from '@testing-library/react'
+import { render, renderHook, screen, waitFor } from '@testing-library/react'
 import { AxiosError } from 'axios'
 import { act } from 'react'
 import { vi } from 'vitest'
+import { ProjectsSection } from '../../../components/projects'
 import { useProjects } from '../../../components/projects/useProjects'
 import { getGithubRepository } from '../../../controller/projectsController'
 vi.mock('../../../controller/projectsController')
@@ -35,9 +36,12 @@ describe('Project component', () => {
     await act(async () => {
       await result.current.handleGetRepository()
     })
+    render(<ProjectsSection />)
+    console.log(result.current.githubProjects)
 
     await waitFor(() => {
       expect(result.current.githubProjects).toEqual(mockData)
+      expect(screen.getByTestId('project-card')).toBeInTheDocument()
     })
     // expect(result.current.githubProjects).toEqual(mockData)
   })

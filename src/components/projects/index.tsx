@@ -14,7 +14,7 @@ export function ProjectsSection() {
         <S.ProjectsWrapperContainer ref={elementRef}>
           {githubProjects.map((project, index: number) => {
             return (
-              <S.ProjectCard key={index}>
+              <S.ProjectCard key={index} data-testid="project-card">
                 <S.ProjectCardHeader>
                   <GithubLogo size={35} weight="bold" />
                   <h3>{project.name}</h3>
