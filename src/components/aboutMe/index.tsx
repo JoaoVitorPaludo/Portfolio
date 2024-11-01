@@ -53,9 +53,9 @@ export function AboutMe() {
             </Zoom>
             <Zoom in={isVisible} timeout={1500}>
               <img
-                alt="typescript"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-              />
+                alt="golang"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" />
+
             </Zoom>
 
             <div>
