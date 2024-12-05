@@ -1,9 +1,26 @@
-import { Tooltip } from '@mui/material'
-import { Code, InstagramLogo, LinkedinLogo, XLogo } from '@phosphor-icons/react'
-import * as S from './styles'
+import { Tooltip } from '@mui/material';
+import { Code, InstagramLogo, LinkedinLogo, XLogo } from '@phosphor-icons/react';
+import { useEffect, useState } from 'react';
+import * as S from './styles';
 export function HeaderComponent() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
-    <S.HeaderComponentContainer>
+    <S.HeaderComponentContainer className={scrolled ? 'scrolled' : ''}>
       <Code size={30} weight="bold" />
       <S.SocialMediaContainer>
         <Tooltip title="Instagram">
