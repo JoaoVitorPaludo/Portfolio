@@ -6,7 +6,7 @@ export const HomePageContainer = styled.div`
   min-height: 100vh;
 `
 export const HomePageMainSection = styled.section`
-  min-height: 89.5vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
