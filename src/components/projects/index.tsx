@@ -4,12 +4,12 @@ import { useVisibilityObserver } from '../../utils/intersectionObserver'
 import * as S from './styles'
 import { useProjects } from './useProjects'
 export function ProjectsSection() {
-  const { githubProjects } = useProjects()
+  const { githubProjects, t } = useProjects()
   const { isVisible, elementRef } = useVisibilityObserver(0.1)
 
   return (
     <S.ProjectsSectionContainer>
-      <h3>REPOSITÓRIOS PÚBLICOS</h3>
+      <h3>{t("projects.title")}</h3>
       <Grow in={isVisible} timeout={2000}>
         <S.ProjectsWrapperContainer ref={elementRef}>
           {githubProjects.map((project, index: number) => {
@@ -26,7 +26,7 @@ export function ProjectsSection() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Acessar Site
+                    {t("projects.link")}
                   </a>
                 )}
               </S.ProjectCard>
