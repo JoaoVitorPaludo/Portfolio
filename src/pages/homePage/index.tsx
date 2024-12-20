@@ -8,24 +8,15 @@ import { ProjectsSection } from '../../components/projects'
 import * as S from './styles'
 export function HomePage() {
 
-  const { i18n: { changeLanguage, language } } = useTranslation();
+  const { i18n: { language } } = useTranslation();
 
-  const handleChangeLanguage = (language: string) => {
-    try {
-      changeLanguage(language);
-    } catch (error) {
-      console.error('Erro ao mudar o idioma:', error);
-    }
-  };
-  console.log(language)
 
 
   return (
     <S.HomePageContainer>
       <HeaderComponent />
       <S.HomePageMainSection>
-        <button onClick={() => handleChangeLanguage('en')}>Change to English</button>
-        <button onClick={() => handleChangeLanguage('pt')}>Mudar para Português</button>
+
         <Trans i18nKey="homePage.welcomeMessage">
           <h1>
             Seja{' '}
