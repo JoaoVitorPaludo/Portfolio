@@ -1,6 +1,6 @@
 import { CaretDown } from "@phosphor-icons/react";
 import { useState } from "react";
-import ptBr from "../../assets/flags/ban2.jpg";
+import ptBr from "../../assets/flags/pt-br-flag.jpg";
 import en from "../../assets/flags/us-flag.png";
 
 import { useTranslation } from "react-i18next";
@@ -16,11 +16,7 @@ export function LanguageSelector() {
     } = useTranslation();
 
     const handleChangeLanguage = (language: string) => {
-        try {
             changeLanguage(language);
-        } catch (error) {
-            console.error("Erro ao mudar o idioma:", error);
-        }
     };
 
     console.log(scrolled)
@@ -30,10 +26,11 @@ export function LanguageSelector() {
                 $isActive={isActive}
                 onClick={() => setIsActive(!isActive)}
                 $isScrolled={scrolled}
+                data-testid="language-selector-button"
             >
                 <S.LanguageSelected $isActive={isActive}>
-                    <img src={language === "pt" ? ptBr : en} alt="Português" />
-                    <CaretDown size={20} onClick={() => setIsActive(!isActive)} />
+                    <img src={language === "pt" ? ptBr : en} alt="FlagImage" />
+                    <CaretDown size={20} onClick={() => setIsActive(!isActive)} data-testid="language-selector-arrow" />
                 </S.LanguageSelected>
                 {isActive && (
                     <>
@@ -41,6 +38,7 @@ export function LanguageSelector() {
                             $isActive={isActive}
                             onClick={() => handleChangeLanguage("pt")}
                             $selectedLanguage={language === "pt"}
+                            data-testid="language-selector"
                         >
                             <img src={ptBr} alt="Português" />
                             <span>Br</span>
@@ -49,6 +47,7 @@ export function LanguageSelector() {
                             $isActive={isActive}
                             onClick={() => handleChangeLanguage("en")}
                             $selectedLanguage={language === "en"}
+                            data-testid="language-selector"
                         >
                             <img src={en} alt="Inglês" />
                             <span>En</span>

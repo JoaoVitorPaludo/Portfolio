@@ -16,14 +16,6 @@ export function useVisibilityObserver(threshold: number) {
     if (elementRef.current) {
       observer.observe(elementRef.current)
     }
-
-    // return () => {
-    //   if (elementRef.current) {
-    //     console.log('element', elementRef.current)
-
-    //     observer.unobserve(elementRef.current)
-    //   }
-    // }
   }, [threshold])
 
   return {
