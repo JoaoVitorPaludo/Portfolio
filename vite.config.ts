@@ -18,8 +18,10 @@ export default defineConfig({
         '**/dist/**',
         '**/main.tsx/**',
         '**/src/styles/global.ts**',
+        '**/src/tests/**',
       ],
     },
+    include: ['**/*.{test,spec}.?(c|m)[jt]s?(x)'],
     exclude: [
       '**/node_modules/**',
       '**/dist/**',

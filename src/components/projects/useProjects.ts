@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { getGithubRepository } from '../../controller/projectsController'
 
 export interface GithubProjectsProps {
@@ -9,6 +10,8 @@ export interface GithubProjectsProps {
 }
 
 export const useProjects = () => {
+  const { t } = useTranslation();
+
   const [githubProjects, setGitGubProjects] = useState<GithubProjectsProps[]>(
     [],
   )
@@ -26,5 +29,6 @@ export const useProjects = () => {
   return {
     githubProjects,
     handleGetRepository,
+    t
   }
 }

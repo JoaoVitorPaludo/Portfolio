@@ -1,0 +1,16 @@
+{
+    "translation": {
+        "homePage.welcomeMessage": "<0><2></2></0>",
+        "aboutMe.title": "ABOUT ME",
+        "aboutMe.descriptionOne": "Hello, my name is João Vitor. I am 22 years old and hold a degree in Systems Analysis and Development from the University of Passo Fundo (UPF). Currently, I reside in Paraí/RS and have been working as a software developer since August 2022, with a particular passion for web development.",
+        "aboutMe.descriptionTwo": "I am constantly seeking to enhance my knowledge, both personally and professionally, and I take great satisfaction in embracing new challenges. I am a proactive and dedicated individual with excellent teamwork skills. Moreover, I possess experience in leading projects, which inspires me to deliver innovative and efficient solutions.",
+        "aboutMe.curriculum": "Curriculum",
+        "projects.title": "PUBLIC REPOSITORIES",
+        "projects.link": "Access Website",
+        "companies.title": "PROFESSIONAL EXPERIENCES",
+        "companies.activity": "in activity",
+        "companies.roleDescriptionOne": "Initially working as a shipping assistant, I gradually gained more experience and opportunities, eventually becoming a forklift operator at the company. I also participated in the company's fire brigade and worked with the invoicing of tax documents.",
+        "companies.roleDescriptionTwo": "I work as a software developer, contributing to back-end projects using Node.js and front-end projects using frameworks such as React and other libraries.",
+        "companies.roleDescriptionTree": "Primarily working on systems with a focus on healthcare."
+    }
+}

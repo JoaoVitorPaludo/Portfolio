@@ -1,34 +1,28 @@
 import { Fade, Grow, Slide, Zoom } from '@mui/material'
 import { DownloadSimple } from '@phosphor-icons/react'
+import { useTranslation } from 'react-i18next'
 import image from '../../assets/profileImage.jpeg'
 import { useVisibilityObserver } from '../../utils/intersectionObserver'
 import * as S from './styles'
 
 export function AboutMe() {
   const { isVisible, elementRef } = useVisibilityObserver(0.1)
+  const { t } = useTranslation();
 
   return (
     <S.AboutMeContainer ref={elementRef}>
-      <h3>SOBRE MIM</h3>
+      <h3>{t('aboutMe.title')}</h3>
       <S.AboutMeMainCard>
         <Grow in={isVisible} timeout={2000}>
           <img src={image} alt="" />
         </Grow>
         <aside>
+
           <Slide in={isVisible} timeout={2000} direction="left">
             <p>
-              Olá, sou João Vitor, tenho 22 anos e sou formado em Análise e
-              Desenvolvimento de Sistemas pela Universidade de Passo Fundo
-              (UPF). Atualmente, resido em Paraí/RS e atuo como desenvolvedor de
-              software desde agosto de 2022, com uma paixão especial por
-              desenvolvimento web.
+              {t('aboutMe.descriptionOne')}
               <br />
-              Estou sempre em busca de aprimorar meus conhecimentos, tanto
-              pessoais quanto profissionais, e adoro enfrentar novos desafios.
-              Sou uma pessoa proativa, comprometida e tenho facilidade para
-              trabalhar em equipe. Além disso, tenho experiência em liderar
-              projetos, o que me motiva a entregar soluções inovadoras e
-              eficientes.
+              {t('aboutMe.descriptionTwo')}
             </p>
           </Slide>
 
@@ -62,7 +56,7 @@ export function AboutMe() {
               <Fade in={isVisible} timeout={2000}>
                 <a href="/files/Currículo - João Vitor.pdf" download>
                   <button>
-                    Currículo
+                    {t('aboutMe.curriculum')}
                     <DownloadSimple size={16} weight="bold" />
                   </button>
                 </a>

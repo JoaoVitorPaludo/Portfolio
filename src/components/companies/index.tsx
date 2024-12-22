@@ -1,17 +1,20 @@
-import { useScrollTrigger } from '@mui/material'
-import dtiLogo from '../../assets/companyLogos/dataintegraLogo.jpg'
-import lechlerLogo from '../../assets/companyLogos/lechlerLogo.jpg'
+import { useScrollTrigger } from '@mui/material';
+import dtiLogo from '../../assets/companyLogos/dataintegraLogo.jpg';
+import lechlerLogo from '../../assets/companyLogos/lechlerLogo.jpg';
 
-import * as S from './styles'
+import { useTranslation } from 'react-i18next';
+import * as S from './styles';
 export function CompaniesSection() {
+  const { t } = useTranslation();
+
   const trigger = useScrollTrigger({
-    // disableHysteresis: true,
     threshold: 1000,
   })
 
+
   return (
     <S.CompaniesSectionContainer>
-      <h3>EXPERIÊNCIAS PROFISSIONAIS</h3>
+      <h3>{t('companies.title')}</h3>
       <S.CompaniesWrapperContainer>
         <S.CompaniesSlideTransition $isActive={trigger} side="left">
           <S.CompaniesCard>
@@ -24,11 +27,7 @@ export function CompaniesSection() {
             </header>
             <main>
               <p>
-                Atuando inicialmente como auxiliar de expedição, gradualmente
-                ganhando mais experiências e oportunidades, me tornando operador
-                de empilhadeiras na empresa, participando da brigada de
-                bombeiros da empresa, e também trabalhando com o faturamento de
-                notas fiscais.
+                {t("companies.roleDescriptionOne")}
               </p>
             </main>
           </S.CompaniesCard>
@@ -41,15 +40,14 @@ export function CompaniesSection() {
               <img src={dtiLogo} alt="" />
               <div className="text-container">
                 <h3>Dataintegra</h3>
-                <span>12/09/2022 - em atividade</span>
+                <span>12/09/2022 - em {t("companies.activity")}</span>
               </div>
             </header>
             <main>
               <p>
-                Atuo como desenvolvedor de software, tanto em projetos back-end
-                utilizando Node e projetos front-end, utilizando frameworks como
-                React e demais bibliotecas. <br />
-                Atuando principalmente em sistemas com foco hospitalar.
+                {t("companies.roleDescriptionTwo")}
+                <br />
+                {t("companies.roleDescriptionTree")}
               </p>
             </main>
           </S.CompaniesCard>

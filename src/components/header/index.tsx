@@ -1,24 +1,11 @@
 import { Tooltip } from '@mui/material';
 import { Code, InstagramLogo, LinkedinLogo, XLogo } from '@phosphor-icons/react';
-import { useEffect, useState } from 'react';
+import { IsScrolling } from '../../utils/isScrolling';
+import { LanguageSelector } from '../languageSelector';
 import * as S from './styles';
 export function HeaderComponent() {
-  const [scrolled, setScrolled] = useState(false);
+  const { scrolled } = IsScrolling()
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
   return (
     <S.HeaderComponentContainer className={scrolled ? 'scrolled' : ''}>
       <Code size={30} weight="bold" />
@@ -38,6 +25,7 @@ export function HeaderComponent() {
             <XLogo size={30} weight="bold" />
           </a>
         </Tooltip>
+        <LanguageSelector />
       </S.SocialMediaContainer>
     </S.HeaderComponentContainer>
   )

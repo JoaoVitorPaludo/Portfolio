@@ -1,0 +1,16 @@
+{
+    "translation": {
+        "homePage.welcomeMessage": "<0>Seja <2></2></0>",
+        "aboutMe.title": "SOBRE MIM",
+        "aboutMe.descriptionOne": "Olá, sou João Vitor, tenho 22 anos e sou formado em Análise e Desenvolvimento de Sistemas pela Universidade de Passo Fundo (UPF). Atualmente, resido em Paraí/RS e atuo como desenvolvedor de software desde agosto de 2022, com uma paixão especial por desenvolvimento web.",
+        "aboutMe.descriptionTwo": "Estou sempre em busca de aprimorar meus conhecimentos, tanto pessoais quanto profissionais, e adoro enfrentar novos desafios. Sou uma pessoa proativa, comprometida e tenho facilidade para trabalhar em equipe. Além disso, tenho experiência em liderar projetos, o que me motiva a entregar soluções inovadoras e eficientes.",
+        "aboutMe.curriculum": "Currículo",
+        "projects.title": "REPOSITÓRIOS PÚBLICOS",
+        "projects.link": "Acessar Site",
+        "companies.title": "EXPERIÊNCIAS PROFISSIONAIS",
+        "companies.activity": "em atividade",
+        "companies.roleDescriptionOne": "Atuando inicialmente como auxiliar de expedição, gradualmente ganhando mais experiências e oportunidades, me tornando operador de empilhadeiras na empresa, participando da brigada de bombeiros da empresa, e também trabalhando com o faturamento de notas fiscais.",
+        "companies.roleDescriptionTwo": "Atuo como desenvolvedor de software, tanto em projetos back-end utilizando Node e projetos front-end, utilizando frameworks como React e demais bibliotecas.",
+        "companies.roleDescriptionTree": "Atuando principalmente em sistemas com foco hospitalar."
+    }
+}
