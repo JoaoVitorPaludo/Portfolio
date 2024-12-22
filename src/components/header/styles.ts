@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const HeaderComponentContainer = styled.header`
-  min-height: 10.5vh;
-  height: 10.5vh;
+  min-height: 7vh;
+  height: fit-content;
   padding: 1.2rem 12rem;
   display: flex;
   justify-content: space-between;
