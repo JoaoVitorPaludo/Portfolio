@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const CompaniesSectionContainer = styled.div`
   display: flex;
@@ -12,9 +12,10 @@ export const CompaniesSectionContainer = styled.div`
   }
   h3 {
     font-size: 1.5rem;
-    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
   }
-`
+`;
 export const CompaniesWrapperContainer = styled.div`
   width: 100%;
   display: flex;
@@ -24,7 +25,7 @@ export const CompaniesWrapperContainer = styled.div`
   @media (max-width: 900px) {
     flex-direction: column;
   }
-`
+`;
 export const CompaniesCard = styled.div`
   display: flex;
   flex-direction: column;
@@ -32,7 +33,7 @@ export const CompaniesCard = styled.div`
   width: 99%;
   height: 16rem;
   padding: 1.5rem;
-  background-color: ${(props) => props.theme['card-background']};
+  background-color: ${(props) => props.theme["card-background"]};
   border-radius: 1rem;
   box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.5);
 
@@ -81,26 +82,26 @@ export const CompaniesCard = styled.div`
       }
     }
   }
-`
+`;
 
 interface CompaniesSlideTransitionProps {
-  $isActive: boolean
-  side: 'left' | 'right'
+  $isActive: boolean;
+  side: "left" | "right";
 }
 export const CompaniesSlideTransition = styled.div<CompaniesSlideTransitionProps>`
   width: 50%;
   padding-bottom: 1rem;
   transform: ${(props) =>
     props.$isActive
-      ? 'none'
-      : `${props.side === 'left' ? 'translateX(-1000.5px)' : 'translateX(1000.5px)'} `};
+      ? "none"
+      : `${props.side === "left" ? "translateX(-1000.5px)" : "translateX(1000.5px)"} `};
 
   transition: ${(props) =>
     props.$isActive
-      ? 'transform 1.5s cubic-bezier(0, 0, 0.2, 1)'
-      : 'transform 1.5s cubic-bezier(0, 0, 0, 0)'};
+      ? "transform 1.5s cubic-bezier(0, 0, 0.2, 1)"
+      : "transform 1.5s cubic-bezier(0, 0, 0, 0)"};
 
   @media (max-width: 900px) {
     width: 100%;
   }
-`
+`;
