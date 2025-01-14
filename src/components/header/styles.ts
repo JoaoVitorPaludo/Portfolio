@@ -17,8 +17,8 @@ export const HeaderComponentContainer = styled.header`
     backdrop-filter: blur(16px);
   }
 
-  @media (max-width: 566px) {
-    margin: 0rem 4rem;
+  @media (max-width: 700px) {
+    padding: 1.2rem 4rem;
   }
   svg {
     color: ${(props) => props.theme["base-icon-color"]};

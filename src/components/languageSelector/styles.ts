@@ -81,4 +81,12 @@ export const LanguageOptions = styled.div<LanguageSelectorProps>`
     height: 100%;
     border-radius: 50%;
   }
+
+  span {
+    font-size: 0.75rem;
+
+    @media (max-width: 500px) {
+      font-size: 0.75rem !important;
+    }
+  }
 `;
