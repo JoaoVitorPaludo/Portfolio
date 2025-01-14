@@ -12,6 +12,9 @@ export const FooterComponentContainer = styled.footer`
   @media (max-width: 566px) {
     margin: 0rem 3rem;
   }
+  @media (max-width: 400px) {
+    margin: 0rem 2rem;
+  }
   h3 {
     font-size: 0.8rem !important;
     font-family: system-ui, sans-serif;
