@@ -27,7 +27,7 @@
     "react-dom": "^19.1.0",
     "react-i18next": "^15.4.1",
     "react-typed": "^2.0.12",
-    "styled-components": "^6.1.16"
+    "styled-components": "^6.1.17"
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
