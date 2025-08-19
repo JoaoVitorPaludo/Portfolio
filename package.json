@@ -49,6 +49,6 @@
     "jsdom": "^26.1.0",
     "react-test-renderer": "^19.1.1",
     "typescript": "^5.9.2",
-    "vite": "^7.1.2"
+    "vite": "^7.1.3"
   }
 }
